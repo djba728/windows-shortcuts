@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Windowsショートカット完全まとめ</title>
+
+  <!-- 🔥 ファビコン設定（ショ） -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <style>
+    :root{
+      --bg:#e9eef5;
+      --card:#0f1115;
+      --card2:#11141b;
+      --text:#ffffff;
+      --muted:#cbd5e1;
+      --shadow: 0 10px 25px rgba(0,0,0,.25);
+      --radius: 14px;
+      --gap: 18px;
+    }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
+      background: var(--bg);
+      color:#111827;
+    }
+
+    .wrap{
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 22px 18px 28px;
+    }
+
+    .header{
+      position: relative;
+      background: linear-gradient(180deg, #f7fbff 0%, #eef4fb 100%);
+      border: 1px solid rgba(0,0,0,.08);
+      border-radius: 16px;
+      padding: 14px 18px;
+      margin-bottom: 16px;
+    }
+
+    .title{
+      margin:0;
+      font-size: 34px;
+      font-weight: 900;
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      line-height: 1.1;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--gap);
+    }
+
+    .card{
+      background: linear-gradient(180deg, var(--card) 0%, var(--card2) 100%);
+      color: var(--text);
+      border-radius: var(--radius);
+      padding: 14px 16px 16px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,.06);
+      min-height: 170px;
+    }
+
+    .card h2{
+      margin:0 0 10px;
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    ul{
+      margin:0;
+      padding-left: 0;
+      list-style: none;
+      display:flex;
+      flex-direction:column;
+      gap: 8px;
+    }
+
+    li{
+      display:flex;
+      gap: 10px;
+      align-items: baseline;
+    }
+
+    .dot{
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.9);
+      margin-top: 8px;
+      flex: 0 0 6px;
+    }
+
+    .keyline{
+      font-size: 15px;
+      font-weight: 800;
+    }
+
+    .keyline span{
+      font-weight: 600;
+      color: var(--muted);
+      margin-left: 8px;
+    }
+
+    @media (max-width: 980px){
+      .grid{ grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px){
+      .grid{ grid-template-columns: 1fr; }
+      .title{ font-size: 26px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="header">
+      <h1 class="title">🔥 Windowsショートカット完全まとめ 🔥</h1>
+    </div>
+
+    <div class="grid">
+
+      <section class="card">
+        <h2>🟠 基本操作（呼吸レベル）</h2>
+        <ul>
+          <li><span class="dot"></span><div class="keyline">Ctrl + C<span>コピー</span></div></li>
+          <li><span class="dot"></span><div class="keyline">Ctrl + V<span>貼り付け</span></div></li>
+          <li><span class="dot"></span><div class="keyline">Ctrl + X<span>切り取り</span></div></li>
+          <li><span class="dot"></span><div class="keyline">Ctrl + Z<span>元に戻す</span></div></li>
+          <li><span class="dot"></span><div class="keyline">Ctrl + Y<span>やり直し</span></div></li>
+          <li><span class="dot"></span><div class="keyline">Ctrl + A<span>全選択</span></div></li>
+          <li><span class="dot"></span><div class="keyline">Ctrl + S<span>保存</span></div></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>🟣 画面・ウィンドウ操作</h2>
+        <ul>
+          <li><span class="dot"></span><div class="keyline">Alt + Tab<span>画面切替</span></div></li>
+          <li><span class="dot"></span><div class="keyline">Windows + Tab<span>タスクビュー</span></div></li>
+          <li><span class="dot"></span><div class="keyline">Windows + D<span>デスクトップ表示</span></div></li>
+          <li><span class="dot"></span><div class="keyline">Windows + ↑ / ↓<span>最大化・最小化</span></div></li>
+          <li><span class="dot"></span><div class="keyline">Windows + ← / →<span>画面左右分割</span></div></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>🟠 テキスト編集</h2>
+        <ul>
+          <li><span class="dot"></span><div class="keyline">Ctrl + F<span>検索</span></div></li>
+          <li><span class="dot"></span><div class="keyline">Ctrl + H<span>置換</span></div></li>
+          <li><span class="dot"></span><div class="keyline">Ctrl + B<span>太字</span></div></li>
+          <li><span class="dot"></span><div class="keyline">Ctrl + Backspace<span>単語削除</span></div></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>🧠 便利系</h2>
+        <ul>
+          <li><span class="dot"></span><div class="keyline">Windows + V<span>クリップボード履歴</span></div></li>
+          <li><span class="dot"></span><div class="keyline">Windows + Alt + R<span>録画開始／停止</span></div></li>
+          <li><span class="dot"></span><div class="keyline">Windows + Shift + S<span>範囲スクショ</span></div></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>🚨 トラブル対応</h2>
+        <ul>
+          <li><span class="dot"></span><div class="keyline">Ctrl + Shift + Esc<span>タスクマネージャー</span></div></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>🏅 ファイル操作</h2>
+        <ul>
+          <li><span class="dot"></span><div class="keyline">Windows + E<span>エクスプローラー</span></div></li>
+          <li><span class="dot"></span><div class="keyline">F2<span>名前変更</span></div></li>
+          <li><span class="dot"></span><div class="keyline">Shift + Delete<span>完全削除</span></div></li>
+        </ul>
+      </section>
+
+    </div>
+  </div>
+</body>
+</html>
